@@ -1,0 +1,133 @@
+.top {
+ background-color: var(--background-color-header);
+ border-bottom: 1px solid #ECECEC;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  color: #000000;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-text {
+  color: #2196f3;
+}
+
+
+.header-contacts{
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+.nav{
+  display: flex;
+  gap: 50px;
+
+}
+
+.site-nav {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+  &--current::after  {
+  content:'';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-focus-color);
+  bottom: 0px;
+}
+}
+
+
+
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav,
+.contacts
+ {
+  text-decoration: none;
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+}
+.contacts{
+  display: flex;
+}
+
+.mail,
+.phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus{
+    color: var(--hover-focus-color);
+  }
+}
+
+
+.mail-icon{
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .mail:hover &,
+  .mail:focus &{
+  fill: var(--hover-focus-color);
+  }
+}
+
+.phone-icon{
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .phone:focus &,
+  .phone:hover &
+  {
+  fill: var(--hover-focus-color)
+  }
+}
