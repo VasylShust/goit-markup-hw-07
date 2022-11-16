@@ -480,7 +480,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-item-link:hover .roster__icon, .clients-item-link:focus .roster__icon {
+.roster__link:hover .roster__icon, .roster__link:focus .roster__icon {
   fill: var(--hover-focus-color);
 }
 
@@ -699,6 +699,9 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-item-link:hover, .soc-item-link:focus {
+  background-color: var(--hover-focus-color);
 }
 
 .soc-item-icon {
